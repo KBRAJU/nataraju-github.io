@@ -1,0 +1,24 @@
+response = client.create_image(
+          BlockDeviceMappings=[
+              {
+                  'DeviceName': 'string',
+                  'VirtualName': 'string',
+                  'Ebs': {
+                      'Encrypted': True|False,
+                      'DeleteOnTermination': True|False,
+                      'Iops': 123,
+                      'KmsKeyId': 'string',
+                      'SnapshotId': 'string',
+                      'VolumeSize': 123,
+                      'VolumeType': 'standard'|'io1'|'gp2'|'sc1'|'st1'
+                  },
+                  'NoDevice': 'string'
+              },
+          ],
+          Description='string',
+          DryRun=True|False,
+          InstanceId='string',
+          Name='string',
+          NoReboot=True|False
+      )
+

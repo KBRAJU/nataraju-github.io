@@ -1,0 +1,39 @@
+{
+        "aws_vpc":{
+                        "Vpc":{
+                           "VpcName":"client_1",
+                           "VpcCidr":"192.168.122.0/24"
+                        },
+		"subnet":{
+                    "subnet1":{
+                              "sub_name":"client_1_subnet1",
+                              "private":"True",
+                               "sub_cidr": "192.168.122.0/27"
+                                  },
+                     "subnet2":{
+                          "sub_name":"client_1_pubsubnet1",
+                           "private":"False",
+                            "sub_cidr": "192.168.122.32/27"
+                                }
+                          },
+		     "Igw":{
+                                "Igwname": "client_1_igw",
+                                "VpcId":""
+                        },
+		     "router":{
+                                "router1":{
+                                        "VpcId":"",
+                                        "router_name": "route1_client1",
+                                        "private": "True"
+                                },
+                                "router2":{
+                                        "VpcId":"",
+                                        "router_name": "route2_client1",
+                                        "private": "False"
+                                }
+                        }
+
+
+		  
+		   }
+}

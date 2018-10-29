@@ -1,0 +1,9 @@
+{
+        "aws_vpc":{
+                        "Vpc":{
+                                "VpcName": "client_1",
+                                "VpcCidr":"192.168.122.0/24"
+                   }     
+		  
+		}
+}
